@@ -6,7 +6,8 @@ import org.openstreetmap.josm.plugins.Plugin;
 import org.openstreetmap.josm.plugins.PluginInformation;
 
 public class TodoPlugin extends Plugin {
-
+	private static final TodoDialog dialog = new TodoDialog();
+	
     public TodoPlugin(PluginInformation info) {
         super(info);
     }
@@ -14,7 +15,7 @@ public class TodoPlugin extends Plugin {
     @Override
     public void mapFrameInitialized(MapFrame oldFrame, MapFrame newFrame) {
         if (newFrame != null && newFrame.mapView != null) {
-            newFrame.addToggleDialog(new TodoDialog());
+            newFrame.addToggleDialog(dialog);
         }
     }
 }
