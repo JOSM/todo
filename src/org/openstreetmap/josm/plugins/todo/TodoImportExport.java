@@ -5,11 +5,10 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Objects;
 
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonValue;
-import javax.json.stream.JsonParser;
-
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonValue;
+import jakarta.json.stream.JsonParser;
 import org.openstreetmap.josm.data.coor.ILatLon;
 import org.openstreetmap.josm.data.coor.LatLon;
 import org.openstreetmap.josm.data.osm.BBox;
