@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="todo" default="dist" basedir=".">
     <property name="commit.message" value="Commit message"/>
-    <property name="plugin.main.version" value="18833"/>
+    <property name="plugin.main.version" value="19044"/>
     <property name="plugin.author" value="Gnonthgol;AndrewBuck;bagage"/>
     <property name="plugin.class" value="org.openstreetmap.josm.plugins.todo.TodoPlugin"/>
     <property name="plugin.description" value="Adds a todo list dialog that makes it easy to go through large lists of objects"/>
@@ -13,9 +13,10 @@
 
     <target name="additional-manifest">
         <manifest file="MANIFEST" mode="update">
-            <attribute name="14221_Plugin-Url" value="133;https://github.com/JOSM/todo/releases/download/v133/todo.jar" />
             <attribute name="10580_Plugin-Url" value="v30300;https://github.com/JOSM/todo/releases/download/v30300/todo.jar" />
             <attribute name="12663_Plugin-Url" value="v30305;https://github.com/JOSM/todo/releases/download/v30305/todo.jar" />
+            <attribute name="14221_Plugin-Url" value="133;https://github.com/JOSM/todo/releases/download/v133/todo.jar" />
+            <attribute name="18833_Plugin-Url" value="141;https://github.com/JOSM/todo/releases/download/v141/todo.jar" />
         </manifest>
     </target>
 

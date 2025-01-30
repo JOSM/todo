@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.openstreetmap.josm.plugins</groupId>
+        <artifactId>plugin-root</artifactId>
+        <version>SNAPSHOT</version>
+    </parent>
+    <artifactId>todo</artifactId>
+
+    <url>${plugin.link}</url>
+    <developers>
+        <developer>
+            <id>Gnonthgol</id>
+        </developer>
+        <developer>
+            <id>AndrewBuck</id>
+        </developer>
+        <developer>
+            <id>bagage</id>
+        </developer>
+    </developers>
+    <properties>
+        <java.lang.version>17</java.lang.version>
+        <plugin.src.dir>src</plugin.src.dir>
+        <plugin.main.version>19044</plugin.main.version>
+        <plugin.author>Gnonthgol;AndrewBuck;bagage</plugin.author>
+        <plugin.class>org.openstreetmap.josm.plugins.todo.TodoPlugin</plugin.class>
+        <plugin.description>Adds a todo list dialog that makes it easy to go through large lists of objects</plugin.description>
+        <plugin.icon>images/dialogs/todo.png</plugin.icon>
+        <plugin.link>https://wiki.openstreetmap.org/wiki/JOSM/Plugins/TODO_list</plugin.link>
+        <plugin.minimum.java.version>${java.lang.version}</plugin.minimum.java.version>
+        <plugin.canloadatruntime>true</plugin.canloadatruntime>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Plugin-Link>${plugin.link}</Plugin-Link>
+                            <Plugin-Icon>${plugin.icon}</Plugin-Icon>
+                            <Plugin-Canloadatruntime>${plugin.canloadatruntime}</Plugin-Canloadatruntime>
+                            <Plugin-Minimum-Java-Version>${plugin.minimum.java.version}</Plugin-Minimum-Java-Version>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
